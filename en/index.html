@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Nico Boerhof | Digital Creative Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+      <!-- Polyfills voor oudere browsers -->
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <!-- CSS-fallbacks -->
+  <style>
+    /* object-fit fallback */
+    .sc-video, .sc-phone-frame img {
+      object-fit: cover;
+      font-family: 'object-fit: cover;';
+    }
+
+    /* grid gap fallback */
+    .sc-phones-grid-4 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -10px; /* gap fallback */
+    }
+    .sc-phones-grid-4 > * {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="main-nav">
+    <div class="nav-logo">CV — <span>NICO BOERHOF</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#motivatie">Motivation</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#kwaliteiten">Qualities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="mailto:n.boerhof@gmail.com" class="nav-cta">Contact me</a>
+      <button class="nav-burger" id="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer">
+    <ul>
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#motivatie" class="drawer-link">Motivation</a></li>
+      <li><a href="#work" class="drawer-link">Work</a></li>
+      <li><a href="#skills" class="drawer-link">Skills</a></li>
+      <li><a href="#experience" class="drawer-link">Experience</a></li>
+      <li><a href="#kwaliteiten" class="drawer-link">Qualities</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+    </ul>
+    <a href="mailto:n.boerhof@gmail.com" class="drawer-cta">Hire me →</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+  </section>
+
+  <main>
+
+    <!-- ─── INTRO — EDITORIAL SPLIT ─── -->
+    <section class="intro-section" id="about">
+      <!-- Left: Content -->
+      <div class="intro-content">
+        <div class="intro-label reveal">About me</div>
+        <h1 class="intro-headline reveal" style="transition-delay:.05s">
+          <em>Nico</em><br><em>Boerhof</em>
+        </h1>
+        <div class="about-letter reveal" style="transition-delay:.1s">
+          <p class="about-letter__lead">
+            Nice to meet you! I'm Nico Boerhof, a digital creative designer with over 15 years of experience
+            developing and producing visual content and campaigns. I work at the intersection of concept, design
+            and production.
+          </p>
+          <div class="about-letter__body">
+            <p>In my work, I don't think in individual assets but in formats and campaigns. I develop concepts,
+              translate them into concrete productions and safeguard the creative vision from start to finish.
+              Whether it's social content, campaigns or branded video — I make sure the story is right, visually
+              strong and connects with the audience. I regularly take creative direction during productions and
+              work closely with other disciplines to achieve the best result. AI is a natural part of my creative
+              process — for concept development, visualisation and accelerating workflows, freeing up more space
+              for creativity and quality.</p>
+            <p>Over the past years I've worked for international brands including <span
+                class="about-letter__brand">Škoda</span>, <span class="about-letter__brand">Tommy Hilfiger</span>, <span
+                class="about-letter__brand">FrieslandCampina</span>, <span class="about-letter__brand">L'Oréal</span>,
+              <span class="about-letter__brand">Philips</span> and <span class="about-letter__brand">Bol.com</span>. In
+              these projects, the focus wasn't just on execution, but on translating brand stories into consistent
+              and scalable content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Portrait -->
+      <div class="intro-portrait">
+        <img src="../images/ik.png" alt="Nico Boerhof">
+      </div>
+    </section>
+
+    <!-- ─── STATS ─── -->
+    <div class="stats-strip">
+      <div class="stat-cell reveal">
+        <div class="stat-n">15<sup>+</sup></div>
+        <div class="stat-label">Years of<br>experience</div>
+      </div>
+      <div class="stat-cell reveal" style="transition-delay:.1s">
+        <div class="stat-n">6</div>
+        <div class="stat-label">Major<br>brands</div>
+      </div>
+      <div class="stat-cell reveal" style="transition-delay:.2s">
+        <div class="stat-n">4<sup>+</sup></div>
+        <div class="stat-label">Studios &amp;<br>agencies</div>
+      </div>
+      <div class="stat-cell reveal" style="transition-delay:.3s">
+        <div class="stat-n">∞</div>
+        <div class="stat-label">Creative<br>ideas</div>
+      </div>
+    </div>
+
+    <!-- ─── MOTIVATION ─── -->
+    <section class="motivatie-sec" id="motivatie">
+      <div class="motivatie-inner">
+        <div class="sec-eye reveal">Motivation</div>
+        <h2 class="sec-title reveal motivatie-sec-title" style="transition-delay:.05s">My Motivation</h2>
+        <div class="motivatie-quote reveal" style="transition-delay:.12s">
+          <span class="motivatie-mark">"</span>
+          <p class="motivatie-text">What draws me to this role at <strong>Addurance</strong> is the combination of
+            concept development, motion design and creating digital content for diverse campaigns. Bringing brands
+            to life through strong visuals and storytelling — and making a direct impact across different channels
+            — is something that truly excites me.<br><br>
+            As a freelancer, I'm looking for an assignment where I can apply my experience as a digital creative
+            within a team. Working together on creative concepts and content that are not only visually strong,
+            but also tailored to platforms like social — with room for experimentation, speed and leveraging
+            new tools like AI.</p>
+          <span class="motivatie-mark motivatie-mark--close">"</span>
+        </div>
+        <span class="motivatie-closing reveal" style="transition-delay:.2s">I'd love to tell you more about my
+          experience and motivation in a personal conversation.</span>
+      </div>
+    </section>
+
+    <!-- ─── PREVIOUS WORK ─── -->
+    <section class="sec white" id="work">
+      <div class="sec-eye reveal">CV</div>
+      <h2 class="sec-title reveal" style="transition-delay:.05s">Previous work.</h2>
+      <p class="sec-sub reveal" style="transition-delay:.1s">A selection of projects where I was responsible for
+        concept, execution and production — from social video to 3D visualisation.</p>
+
+      <!-- ── Canva — social videos ── -->
+      <div class="sc-project sc-project--centered reveal" style="transition-delay:.12s">
+        <div class="sc-project-header">
+          <span class="sc-brand">Canva</span>
+          <span class="sc-role">Social motion video · Concept &amp; production</span>
+        </div>
+        <div class="sc-phones-grid-4">
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video"
+                data-src="../showcase/Canva/ps_de_de_edu_backtoschool2025_202507_acq_canvaedu_collaboration_whiteboard_motion_15s_9x16.mp4" poster="../showcase/Canva/ps_de_de_edu_backtoschool2025_202507_acq_canvaedu_collaboration_whiteboard_motion_15s_9x16.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Back to School 2025<br>Education</div>
+          </div>
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video"
+                data-src="../showcase/Canva/ps_it_it_mau_mothersday2025_202502_acq_canvafree_templates-multiple_generic_motion_consumer_15s_9x16_v2.mp4" poster="../showcase/Canva/ps_it_it_mau_mothersday2025_202502_acq_canvafree_templates-multiple_generic_motion_consumer_15s_9x16_v2.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Mother's Day 2025<br>Consumer</div>
+          </div>
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video"
+                data-src="../showcase/Canva/ps_it_it_payback-pro_mothersday2025_202502_rev_canapro_premium-templates_generic_motion_smb__15s_9x16_v2.mp4" poster="../showcase/Canva/ps_it_it_payback-pro_mothersday2025_202502_rev_canapro_premium-templates_generic_motion_smb__15s_9x16_v2.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Mother's Day 2025<br>Pro / SMB</div>
+          </div>
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video"
+                data-src="../showcase/Canva/ps_uk_en_mau_wedding25_202505_acq_canvafree_local-templates_printproducts_motion_none_consumers_9x16.mp4" poster="../showcase/Canva/ps_uk_en_mau_wedding25_202505_acq_canvafree_local-templates_printproducts_motion_none_consumers_9x16.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Wedding 2025<br>Print Products</div>
+          </div>
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video"
+                data-src="../showcase/Canva/ps_uk_en_mau_wedding25_202505_acq_canvafree_photo-editor_photo-editor_motion_none_consumers_15s_9x16.mp4" poster="../showcase/Canva/ps_uk_en_mau_wedding25_202505_acq_canvafree_photo-editor_photo-editor_motion_none_consumers_15s_9x16.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Wedding 2025<br>Photo Editor</div>
+          </div>
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video"
+                data-src="../showcase/Canva/ps_uk_en_payback-pro_wedding25_202505_rev_canvapro_premium-templates_generic_motion_none_smbs_15s_9x16.mp4" poster="../showcase/Canva/ps_uk_en_payback-pro_wedding25_202505_rev_canvapro_premium-templates_generic_motion_none_smbs_15s_9x16.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Wedding 2025<br>Pro / SMB</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Bol.com — social banners ── -->
+      <div class="sc-project sc-project--centered reveal" style="transition-delay:.10s">
+        <div class="sc-project-header">
+          <span class="sc-brand">Bol.com</span>
+          <span class="sc-role">Social banner · Display advertising</span>
+        </div>
+        <div class="sc-phones-grid-4 bol">
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video" data-src="../showcase/Bol/bol_swipecube_nunl.mp4" poster="../showcase/Bol/bol_swipecube_nunl.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Bol.com · Swipe Cube · 9:16</div>
+          </div>
+          <div class="sc-phone-card">
+            <div class="sc-phone-frame">
+              <video class="sc-video" data-src="../showcase/Bol/bol_swipecube_nunl_300x250.mp4" poster="../showcase/Bol/bol_swipecube_nunl_300x250.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Bol.com · Swipe Cube · 300×250</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── HPTO Banners — VakantieVeilingen, NPL ── -->
+      <div class="sc-project sc-project--centered reveal" style="transition-delay:.08s">
+        <div class="sc-project-header">
+          <span class="sc-brand">HPTO Banners</span>
+          <span class="sc-role">Branded video · Homepage Take Over · NU.nl</span>
+        </div>
+        <div class="sc-stacked-grid">
+          <div class="sc-wide-card">
+            <div class="sc-wide-frame">
+              <video class="sc-video" data-src="../showcase/VakantieVeilingen/vakantie_veilingen_hpto_nunl.mp4" poster="../showcase/VakantieVeilingen/vakantie_veilingen_hpto_nunl.jpg" muted
+                loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">VakantieVeilingen · HPTO</div>
+          </div>
+          <div class="sc-wide-card">
+            <div class="sc-wide-frame">
+              <video class="sc-video" data-src="../showcase/Npl/NPL_HPTO_nunl.mp4" poster="../showcase/Npl/NPL_HPTO_nunl.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="sc-caption">Nationale Postcode Loterij · HPTO</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Staatsloterij — 3D suitcase featured + video + renders ── -->
+      <div class="sc-project sc-project--centered reveal" style="transition-delay:.08s">
+        <div class="sc-project-header">
+          <span class="sc-brand">Staatsloterij</span>
+          <span class="sc-role">Instagram campaign · 3D visualisation · Blender</span>
+        </div>
+        <div class="sc-featured-frame">
+          <img src="../showcase/Staatsloterij/3d_koffer.png" alt="3D suitcase">
+        </div>
+        <div class="sc-sub-row">
+          <div class="sc-square-frame">
+            <video class="sc-video" data-src="../showcase/Staatsloterij/Staatsloterij_IG_1080x1080.mp4" poster="../showcase/Staatsloterij/Staatsloterij_IG_1080x1080.jpg" muted loop
+              playsinline preload="none"></video>
+          </div>
+          <div class="sc-still-frame"><img src="../showcase/Staatsloterij/blender_1.png" alt="Blender render 1"></div>
+          <div class="sc-still-frame"><img src="../showcase/Staatsloterij/blender_2.png" alt="Blender render 2"></div>
+        </div>
+      </div>
+
+      <!-- ── Lindemans — poster featured + product renders ── -->
+      <div class="sc-project sc-project--centered reveal" style="transition-delay:.08s">
+        <div class="sc-project-header">
+          <span class="sc-brand">Lindemans</span>
+          <span class="sc-role">Product visualisation · Billboard outdoor</span>
+        </div>
+        <div class="sc-featured-frame">
+          <img src="../showcase/Lindemans/Lindemans_poster.jpg" alt="Lindemans poster">
+        </div>
+        <div class="sc-sub-row">
+          <div class="sc-image-frame"><img src="../showcase/Lindemans/sideview.jpg" alt="Lindemans sideview"></div>
+          <div class="sc-image-frame"><img src="../showcase/Lindemans/sideview_2.jpg" alt="Lindemans sideview 2"></div>
+          <div class="sc-image-frame"><img src="../showcase/Lindemans/bottomview.jpg" alt="Lindemans bottomview"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MY TOOLKIT ─── -->
+    <section class="sec white" id="skills">
+      <div class="sec-eye reveal">Expertise</div>
+      <h2 class="sec-title reveal" style="transition-delay:.05s">My<br><em>Skills</em>
+      </h2>
+      <p class="sec-sub reveal" style="transition-delay:.1s">Software &amp; skills I use every day.</p>
+
+      <!-- MacBook image — visual anchor -->
+      <div class="toolkit-hero reveal" style="transition-delay:.12s">
+        <img src="../images/canva.jpg" alt="After Effects workflow">
+        <div class="toolkit-overlay">
+          <div class="toolkit-overlay-text">
+            <strong>Design · Concept · Production</strong><br>
+            <p>15+ years of professional experience — from concept to production</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill bars -->
+      <div class="skills-layout">
+        <div class="skill-row reveal" style="transition-delay:.06s">
+          <div class="skill-meta"><span class="skill-name">After Effects</span><span class="skill-pct">98%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="98"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.1s">
+          <div class="skill-meta"><span class="skill-name">Premiere Pro</span><span class="skill-pct">97%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="97"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.14s">
+          <div class="skill-meta"><span class="skill-name">Concept Development</span><span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="95"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.18s">
+          <div class="skill-meta"><span class="skill-name">Motion Graphics</span><span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="95"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.22s">
+          <div class="skill-meta"><span class="skill-name">Design</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="90"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.26s">
+          <div class="skill-meta"><span class="skill-name">Production</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="90"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.30s">
+          <div class="skill-meta"><span class="skill-name">Display Advertising</span><span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="90"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.34s">
+          <div class="skill-meta"><span class="skill-name">AI Creative Tools</span><span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="85"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.38s">
+          <div class="skill-meta"><span class="skill-name">HTML5 / CSS</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="80"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.42s">
+          <div class="skill-meta"><span class="skill-name">Figma</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="80"></div>
+          </div>
+        </div>
+        <div class="skill-row reveal" style="transition-delay:.46s">
+          <div class="skill-meta"><span class="skill-name">JavaScript</span><span class="skill-pct">65%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-pct="65"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ─── -->
+    <section class="sec bg" id="experience">
+      <div class="sec-eye reveal">Experience</div>
+      <h2 class="sec-title reveal" style="transition-delay:.05s">Selected<br>Work</h2>
+      <p class="sec-sub reveal" style="transition-delay:.1s">An overview of my professional background.</p>
+      <div class="exp-layout">
+        <div class="exp-nav">
+          <div class="exp-nav-label">Period</div>
+          <span class="exp-nav-item active">2020 – 2026</span>
+          <span class="exp-nav-item">2019 – 2020</span>
+          <span class="exp-nav-item">2012 – 2019</span>
+          <span class="exp-nav-item">2011 – 2012</span>
+          <span class="exp-nav-item">2009 – 2011</span>
+        </div>
+        <div class="exp-entries">
+          <div class="exp-item">
+            <div class="exp-period">2020 – 2026</div>
+            <div class="exp-role">Digital Creative Designer (Video, Motion &amp; Interactive)</div>
+            <div class="exp-company">The Hoff Creative Productions — Freelance</div>
+            <p class="exp-desc">From concept to creation: I develop and produce visual stories that move. From
+              motion graphics and promotional videos to interactive productions and digital campaigns. I work
+              independently when needed, but I also thrive in creative teams — always with a sharp eye for
+              detail, experience and impact.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-period">2019 – 2020</div>
+            <div class="exp-role">Motion Graphics Designer / Creative Developer</div>
+            <div class="exp-company">Men in Green</div>
+            <p class="exp-desc">Development of motion graphics and social content for brands including Bol.com,
+              Staatsloterij and TOTO. Alongside visual creation, I worked on HTML5 display banner tooling in
+              close collaboration with the development team — with a focus on smart, scalable and efficient
+              production.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-period">2012 – 2019</div>
+            <div class="exp-role">Digital Creative Designer</div>
+            <div class="exp-company">Pervorm</div>
+            <p class="exp-desc">Digital concepts translated into fully functioning advertisements for
+              FrieslandCampina, L'Oréal, Nationale Postcode Loterij and MediaMarkt. Video, HTML banners,
+              landing pages and VR.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-period">2011 – 2012</div>
+            <div class="exp-role">Motion Graphics Designer</div>
+            <div class="exp-company">HPM</div>
+            <p class="exp-desc">From Flash to After Effects — editing and creating video animations, plus
+              camera and sound operator experience.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-period">2009 – 2011</div>
+            <div class="exp-role">Flash Developer</div>
+            <div class="exp-company">eFocus / Valtech</div>
+            <p class="exp-desc">Bridge between design and development. Designs translated into interactive
+              web applications, building JavaScript programming skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="brands-wrap reveal">
+        <div class="brands-track">
+          <span class="brand-tag">Škoda</span><span class="brand-tag">Tommy Hilfiger</span><span
+            class="brand-tag">FrieslandCampina</span><span class="brand-tag">L'Oréal</span><span
+            class="brand-tag">Philips</span><span class="brand-tag">Bol.com</span><span
+            class="brand-tag">Staatsloterij</span><span class="brand-tag">Toto</span><span
+            class="brand-tag">MediaMarkt</span><span class="brand-tag">Nationale Postcode Loterij</span>
+          <span class="brand-tag">Škoda</span><span class="brand-tag">Tommy Hilfiger</span><span
+            class="brand-tag">FrieslandCampina</span><span class="brand-tag">L'Oréal</span><span
+            class="brand-tag">Philips</span><span class="brand-tag">Bol.com</span><span
+            class="brand-tag">Staatsloterij</span><span class="brand-tag">Toto</span><span
+            class="brand-tag">MediaMarkt</span><span class="brand-tag">Nationale Postcode Loterij</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ME ─── -->
+    <section class="sec cream" id="kwaliteiten">
+      <div class="sec-eye reveal">About me</div>
+      <h2 class="sec-title reveal" style="transition-delay:.05s">Professional<br>qualities</h2>
+      <p class="sec-sub reveal" style="transition-delay:.1s">Down-to-earth, creative and with a sense of humour.</p>
+      <div class="about-layout">
+        <!-- Left: qualities -->
+        <div class="qual-grid">
+          <div class="qual-card reveal" style="transition-delay:.1s">
+            <span class="qual-icon">🎯</span>
+            <div class="qual-title">Responsible</div>
+            <div class="qual-text">When someone asks me to do something, I take full ownership of getting it
+              done. Not just for my own tasks — I always help others reach their goals too.
+            </div>
+          </div>
+          <div class="qual-card reveal" style="transition-delay:.18s">
+            <span class="qual-icon">💡</span>
+            <div class="qual-title">Creative</div>
+            <div class="qual-text">I'm resourceful when it comes to finding solutions and enjoy exploring
+              different ideas. Design and development often demand a lot of creativity — something I genuinely
+              enjoy.
+            </div>
+          </div>
+          <div class="qual-card reveal" style="transition-delay:.26s">
+            <span class="qual-icon">⚡</span>
+            <div class="qual-title">Flexible</div>
+            <div class="qual-text">As a freelancer, you need to be ready to tackle any challenge. This also
+              requires a degree of flexibility, as you often deal with tasks outside your own area of
+              expertise.</div>
+          </div>
+          <div class="qual-card reveal" style="transition-delay:.34s">
+            <span class="qual-icon">🤝</span>
+            <div class="qual-title">Loyal</div>
+            <div class="qual-text">I'm loyal to colleagues, teammates, friends and family. When I'm part of
+              a project, I give my best to get the most out of it and be a genuinely active member of the
+              team.</div>
+          </div>
+        </div>
+        <!-- Right: image + education + hobbies -->
+        <div class="about-right">
+          <!-- Bouldering image -->
+          <div class="bouldering-frame reveal" style="transition-delay:.08s">
+            <img src="../images/img_bouldering.jpg" alt="Bouldering">
+          </div>
+
+          <div class="reveal" style="transition-delay:.15s">
+            <div class="sec-eye" style="margin-bottom:18px">Education</div>
+            <div class="edu-badge">
+              <div class="edu-icon">🎓</div>
+              <div>
+                <div class="edu-degree">Bachelor of Arts (BA)</div>
+                <div class="edu-spec">Art &amp; Technology — Cognitive Ergonomic Design</div>
+                <div class="edu-school">University of the Arts · Digital Media Design · 2004–2008</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay:.22s">
+            <div class="sec-eye" style="margin-bottom:14px">Free time</div>
+            <p class="hobbies-text">
+              In my free time I love spending time with my girlfriend and our 8-year-old daughter. I enjoy
+              travelling, watching films, surfing, working out and bouldering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <div class="cta-wrap">
+      <section class="cta-section" id="contact">
+        <div class="cta-text">
+          <div class="cta-headline">I'd love to tell you more.<br><span>Shall we connect?</span></div>
+          <div class="cta-sub" style="color:#000; font-size:16px;">n.boerhof@gmail.com · +31 (0)6 208 24 345</div>
+        </div>
+        <div class="cta-btns">
+          <a href="mailto:n.boerhof@gmail.com" class="btn-white">Send an email</a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <span>Nico Boerhof - CV</span>
+      <span>© 2026 Nico Boerhof. All Rights Reserved.</span>
+    </footer>
+  </main>
+
+  <!-- ── BREAKPOINT DEBUG LABEL ── -->
+  <!-- <div id="bp-debug" style="
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    z-index: 99999;
+    background: rgba(0,0,0,0.82);
+    color: #88A91E;
+    font: 700 11px/1.4 monospace;
+    padding: 8px 12px;
+    border-radius: 8px;
+    pointer-events: none;
+    white-space: nowrap;
+  "></div> -->
+
+  <script src="../js/main_final.js"></script>
+
+    <!-- ─── Lazy load video script met IE11 fallback ─── -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var videos = document.querySelectorAll('.sc-video');
+
+  function tryPlay(video) {
+    try {
+      var p = video.play();
+      if (p && typeof p.catch === 'function') p.catch(function() {});
+    } catch(e) {}
+  }
+
+  function handleIntersection(entries) {
+    entries.forEach(function(entry) {
+      var video = entry.target;
+      if (entry.isIntersecting) {
+        video._wantPlay = true;
+        if (!video.src && video.dataset.src) {
+          // Freshly loaded: wait for canplay so play() doesn't fail on iOS/Android
+          video.src = video.dataset.src;
+          video.load();
+          video.addEventListener('canplay', function() {
+            if (video._wantPlay) tryPlay(video);
+          }, { once: true });
+        } else {
+          tryPlay(video);
+        }
+      } else {
+        video._wantPlay = false;
+        try { video.pause(); } catch(e) {}
+      }
+    });
+  }
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5
+    });
+    videos.forEach(function(video) { observer.observe(video); });
+  } else {
+    // fallback: load and play all videos directly
+    videos.forEach(function(video) {
+      if (!video.src && video.dataset.src) {
+        video.src = video.dataset.src;
+        video.load();
+      }
+      tryPlay(video);
+    });
+  }
+});
+</script>
+
+</body>
+
+</html>
