@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hoff Creative Productions</title>
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith('nl')) {
+      window.location.replace('/picnic/nl/');
+    } else {
+      window.location.replace('/picnic/en/');
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/picnic/en/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting... <a href="/picnic/en/">English</a> | <a href="/picnic/nl/">Nederlands</a></p>
+</body>
+</html>
